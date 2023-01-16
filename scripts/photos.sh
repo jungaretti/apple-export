@@ -17,5 +17,6 @@ fi
 mkdir -p "$out"
 pushd "$out"
 icloudpd \
+    --skip-live-photos \
     --directory .
 popd
