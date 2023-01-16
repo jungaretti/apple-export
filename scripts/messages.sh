@@ -9,8 +9,8 @@ if ! command -v imessage-exporter; then
     exit 1
 fi
 
-if test -d out/messages; then
-    echo "ERROR: out/messages directory already exists, please remove it"
+if test -d "$out"; then
+    echo "ERROR: directory $out already exists, please remove it"
     exit 1
 fi
 
